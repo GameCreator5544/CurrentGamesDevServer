@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #0099ff;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    /* Button-like language switch */
+    .lang-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: white;
+      color: #0099ff;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 0.5rem;
+      border: 2px solid white;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .lang-link:hover {
+      background-color: #e6f4ff;
+      color: #007acc;
+    }
+
+    /* Wave sits immediately below the header */
+    .header_wave {
+      display: block;
+      width: 100%;
+      margin-top: -2px;   /* hide anti-alias gap */
+    }
+
+    main {
+      flex: 1;
+      background-color: white;
+      padding: 2rem;
+    }
+
+    footer svg {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+    <a href="/de/index.html" class="lang-link">Switch to German</a>
+  </header>
+
+  <!-- Standalone wave SVG, filled with the SAME blue -->
+  <svg class="header_wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#0099ff" fill-opacity="1"
+      d="M0,128L30,138.7C60,149,120,171,180,165.3C240,160,300,128,360,101.3C420,75,480,53,540,69.3C600,85,660,139,720,138.7C780,139,840,85,900,80C960,75,1020,117,1080,138.7C1140,160,1200,160,1260,154.7C1320,149,1380,139,1410,133.3L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+    </path>
+  </svg>
+
+  <main>
+    <p>This is the main content area of the page.</p>
+  </main>
+
+  <footer>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0099ff" fill-opacity="1"
+        d="M0,64L30,90.7C60,117,120,171,180,192C240,213,300,203,360,170.7C420,139,480,85,540,74.7C600,64,660,96,720,117.3C780,139,840,149,900,149.3C960,149,1020,139,1080,117.3C1140,96,1200,64,1260,90.7C1320,117,1380,203,1410,245.3L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+      </path>
+    </svg>
+  </footer>
+</body>
+</html>
